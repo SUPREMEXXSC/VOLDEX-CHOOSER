@@ -1,0 +1,38 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
+Window = Library.Main("VOLDEX GAME CHOOSER","LeftAlt") -- change "LeftAlt" to key that you want will hide gui
+--//tab
+local Tab = Window.NewTab("OUR GAMES")
+
+
+--//section
+local Section = Tab.NewSection("BEST UI'S BY THEVOLDEX")
+--// Button
+local Button = Section.NewButton("TSB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB-SCRIPT/refs/heads/main/VOLDEX%20HUB",true))()
+end)
+--// Button
+local Button = Section.NewButton("RACE CLICKER",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/RACE-CLICKER-SCRIPT/refs/heads/main/NEST%20HUB/I%20GOT%20RAPED.",true))()
+end)
+--// Button
+local Button = Section.NewButton("TOILET TOWER DEFENSE",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB./refs/heads/main/ttd/BEST%20SCRIPT/I%20GOT%20RAPED%2C",true))()
+end)
+--// Button
+local Button = Section.NewButton("JJS (JUJUTSU SHENIGENS)",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB-JJS/refs/heads/main/0%20effort",true))()
+end)
+--// Button
+local Button = Section.NewButton("DEAD RAILS (NOT MUCH FEATURES CUZ THEY GOT PATCH",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/BEST-DEAD-RAILS-SCRIPT/refs/heads/main/VOLDEXHUB",true))()
+end)
+--//tab
+local Tab = Window.NewTab("CREDITS")
+
+
+--//section
+local Section = Tab.NewSection("CREDITS THEVOLDEX AND VEXON FOR HELPING WITH TSB")
+--// Button
+local Button = Section.NewButton("COPY DISCORD",function()
+setclipboard("https://discord.gg/T2ZNw4kSsR")
+end)
