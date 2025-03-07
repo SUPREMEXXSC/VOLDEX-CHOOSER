@@ -1,3 +1,12 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Script loaded enjoy!",
+Text = "Made By THEVOLDEX", 
+
+Button1 = "OP",
+Button2 = "SIGMA",
+Duration = 30 
+})
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
 Window = Library.Main("VOLDEX GAME CHOOSER","LeftAlt") -- change "LeftAlt" to key that you want will hide gui
 --//tab
