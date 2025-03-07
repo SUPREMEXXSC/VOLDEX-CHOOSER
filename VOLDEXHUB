@@ -30,6 +30,15 @@ end)
 local Button = Section.NewButton("Break In 2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/Rixzy2/refs/heads/main/Mriz",true))()
 end)
+
+--// Button
+local Button = Section.NewButton("Blade Ball",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/Izz/refs/heads/main/Z",true))()
+end)
+--// Button
+local Button = Section.NewButton("Legends Of Speed",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/43Q38zb7",true))()
+end)
 --//tab
 local Tab = Window.NewTab("CREDITS")
 
