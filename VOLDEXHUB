@@ -1,114 +1,46 @@
-local ScreenGui = Instance.new("ScreenGui")
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
+Window = Library.Main("VOLDEX GAME CHOOSER","LeftAlt") -- change "LeftAlt" to key that you want will hide gui
+--//tab
+local Tab = Window.NewTab("OUR GAMES")
 
-local Frame = Instance.new("Frame")
-Frame.Size = UDim2.new(0, 400, 0, 300)
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Frame.BorderSizePixel = 0
-Frame.Active = true
-Frame.Draggable = true
-Frame.Parent = ScreenGui
 
-local FrameCorner = Instance.new("UICorner")
-FrameCorner.CornerRadius = UDim.new(0, 10)
-FrameCorner.Parent = Frame
-
-local Close = Instance.new("TextButton")
-Close.Size = UDim2.new(0, 40, 0, 40)
-Close.Position = UDim2.new(1, -40, 0, 0)
-Close.BackgroundTransparency = 1
-Close.Text = "×"
-Close.TextScaled = true
-Close.TextColor3 = Color3.fromRGB(150, 150, 150)
-Close.Parent = Frame
-Close.MouseButton1Click:Connect(function()
-   ScreenGui:Destroy()
+--//section
+local Section = Tab.NewSection("BEST UI'S BY THEVOLDEX")
+--// Button
+local Button = Section.NewButton("TSB",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB-SCRIPT/refs/heads/main/VOLDEX%20HUB",true))()
 end)
-
-local Title = Instance.new("TextLabel")
-Title.Size = UDim2.new(1, 0, 0, 30)
-Title.Position = UDim2.new(0, 0, 0.05, 0)
-Title.Text = "VOLDEXHUB"
-Title.TextSize = 18
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1
-Title.Parent = Frame
-
-local Instructions = Instance.new("TextLabel")
-Instructions.Size = UDim2.new(1, 0, 0, 30)
-Instructions.Position = UDim2.new(0, 0, 0.2, 0)
-Instructions.Text = ""
-Instructions.TextSize = 13
-Instructions.TextColor3 = Color3.fromRGB(150, 150, 150)
-Instructions.BackgroundTransparency = 1
-Instructions.Parent = Frame
-
-local TextBox = Instance.new("TextBox")
-TextBox.Size = UDim2.new(0.8, 0, 0.2, 0)
-TextBox.Position = UDim2.new(0.1, 0, 0.4, 0)
-TextBox.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-TextBox.PlaceholderText = "Enter Key..."
-TextBox.Text = ""
-TextBox.TextSize = 18
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Parent = Frame
-
-local TextBoxCorner = Instance.new("UICorner")
-TextBoxCorner.CornerRadius = UDim.new(0, 5)
-TextBoxCorner.Parent = TextBox
-
-local GetKey = Instance.new("TextButton")
-GetKey.Size = UDim2.new(0.35, 0, 0.15, 0)
-GetKey.Position = UDim2.new(0.1, 0, 0.7, 0)
-GetKey.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-GetKey.Text = "Get Key"
-GetKey.TextSize = 18
-GetKey.TextColor3 = Color3.fromRGB(150, 150, 150)
-GetKey.Parent = Frame
-
-local GetKeyCorner = Instance.new("UICorner")
-GetKeyCorner.CornerRadius = UDim.new(0, 5)
-GetKeyCorner.Parent = GetKey
-
-local CheckKey = Instance.new("TextButton")
-CheckKey.Size = UDim2.new(0.35, 0, 0.15, 0)
-CheckKey.Position = UDim2.new(0.55, 0, 0.7, 0)
-CheckKey.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-CheckKey.Text = "Check Key"
-CheckKey.TextSize = 18
-CheckKey.TextColor3 = Color3.fromRGB(150, 150, 150)
-CheckKey.Parent = Frame
-
-local CheckKeyCorner = Instance.new("UICorner")
-CheckKeyCorner.CornerRadius = UDim.new(0, 5)
-CheckKeyCorner.Parent = CheckKey
-
-GetKey.MouseButton1Click:Connect(function()
-   setclipboard("VOLDEXHASTHEBEST_KEY")
+--// Button
+local Button = Section.NewButton("RACE CLICKER",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/RACE-CLICKER-SCRIPT/refs/heads/main/NEST%20HUB/I%20GOT%20RAPED.",true))()
 end)
+--// Button
+local Button = Section.NewButton("TOILET TOWER DEFENSE",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB./refs/heads/main/ttd/BEST%20SCRIPT/I%20GOT%20RAPED%2C",true))()
+end)
+--// Button
+local Button = Section.NewButton("JJS (JUJUTSU SHENIGENS)",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-HUB-JJS/refs/heads/main/0%20effort",true))()
+end)
+--// Button
+local Button = Section.NewButton("DEAD RAILS (NOT MUCH FEATURES CUZ THEY GOT PATCH",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/BEST-DEAD-RAILS-SCRIPT/refs/heads/main/VOLDEXHUB",true))()
+end)
+--// Button
+local Button = Section.NewButton("legends of speed",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/Wkekekk/refs/heads/main/Ool",true))()
+end)
+--// Button
+local Button = Section.NewButton("BREAK IN STORY 2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/BREAK-2/refs/heads/main/Atulw",true))()
+end)
+--//tab
+local Tab = Window.NewTab("CREDITS")
 
-local function validateKey(key)
-    return key == "VOLDEXHASTHEBEST_KEY" -- Replace this with your key
-end
 
-CheckKey.MouseButton1Click:Connect(function()
-    local enteredKey = TextBox.Text
-    if validateKey(enteredKey) then
-        TextBox.PlaceholderText = "Correct Key!"
-        TextBox.Text = ""
-        wait(1)
-        ScreenGui:Destroy()
-
--- Put Your Script Here
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/VOLDEX-CHOOSER/refs/heads/main/VOLDEXHUB",true))()
-
-    else
-        TextBox.PlaceholderText = "Invalid key. Try again Our Key Isnt CrackAble"
-        TextBox.Text = ""
-        wait(1)
-        TextBox.PlaceholderText = "Enter Key"
-        TextBox.Text = ""
-    end
+--//section
+local Section = Tab.NewSection("CREDITS THEVOLDEX AND VEXON FOR HELPING WITH TSB")
+--// Button
+local Button = Section.NewButton("COPY DISCORD",function()
+setclipboard("https://discord.gg/T2ZNw4kSsR")
 end)
