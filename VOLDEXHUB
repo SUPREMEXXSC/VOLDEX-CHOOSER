@@ -34,6 +34,10 @@ end)
 local Button = Section.NewButton("BREAK IN STORY 2",function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/BREAK-2/refs/heads/main/Atulw",true))()
 end)
+--// Button
+local Button = Section.NewButton("FISCH",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SUPREMEXXSC/Ourfisch/refs/heads/main/Eskibdi",true))()
+end)
 --//tab
 local Tab = Window.NewTab("CREDITS")
 
